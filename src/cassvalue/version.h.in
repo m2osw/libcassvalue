@@ -1,6 +1,6 @@
 /*
  * Header:
- *      version.h
+ *      src/cassvalue/version.h
  *
  * Description:
  *      Stores the current version. This file is generated from version.h.in.
@@ -9,7 +9,7 @@
  *      See the corresponding .cpp file.
  *
  * License:
- *      Copyright (c) 2011-2017 Made to Order Software Corp.
+ *      Copyright (c) 2011-2018  Made to Order Software Corp.  All Rights Reserved
  * 
  *      http://snapwebsites.org/
  *      contact@m2osw.com
@@ -35,12 +35,12 @@
  */
 #pragma once
 
-namespace libexcept
+namespace cassvalue
 {
 
-static const int   LIBCASSVALUE_LIBRARY_VERSION_MAJOR  = @LIBCASSVALUE_VERSION_MAJOR@;
-static const int   LIBCASSVALUE_LIBRARY_VERSION_MINOR  = @LIBCASSVALUE_VERSION_MINOR@;
-static const int   LIBCASSVALUE_LIBRARY_VERSION_PATCH  = @LIBCASSVALUE_VERSION_PATCH@;
+static const int   CASSVALUE_LIBRARY_VERSION_MAJOR  = @CASSVALUE_VERSION_MAJOR@;
+static const int   CASSVALUE_LIBRARY_VERSION_MINOR  = @CASSVALUE_VERSION_MINOR@;
+static const int   CASSVALUE_LIBRARY_VERSION_PATCH  = @CASSVALUE_VERSION_PATCH@;
 
 /** \brief The library version as a string.
  *
@@ -54,8 +54,15 @@ static const int   LIBCASSVALUE_LIBRARY_VERSION_PATCH  = @LIBCASSVALUE_VERSION_P
  *
  * \sa version()
  */
-static const char *LIBCASSVALUE_LIBRARY_VERSION_STRING __attribute__((unused)) = "@LIBCASSVALUE_VERSION_MAJOR@.@LIBCASSVALUE_VERSION_MINOR@.@LIBCASSVALUE_VERSION_PATCH@";
+static char const * CASSVALUE_LIBRARY_VERSION_STRING __attribute__((unused)) = "@CASSVALUE_VERSION_MAJOR@.@CASSVALUE_VERSION_MINOR@.@CASSVALUE_VERSION_PATCH@";
 
-} // namespace libexcept
+
+char const * version();
+
+int version_major();
+int version_minor();
+int version_patch();
+
+} // namespace cassvalue
 
 // vim: ts=4 sw=4 et

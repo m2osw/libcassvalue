@@ -1,8 +1,13 @@
-libcassvalue (1.0.1.269~xenial) xenial; urgency=high
+libcassvalue (1.0.2.0~xenial) xenial; urgency=high
 
-  * Nightly build.
+  * Bumped copyright notice dates.
+  * Fixed file references folders.
+  * Added a version.cpp so one can call functions to determine the library
+    version (which can be different than the one you compiled with.)
+  * Fixed the namespace of the version.h.in file.
+  * Removed the `LIB` part in the version as defined in the CMakeList.txt.
 
- -- Build Server <build@m2osw.com>  Thu, 05 Jan 2017 02:00:52 -0800
+ -- Alexis Wilke <build@m2osw.com>  Sun, 28 Jan 2018 23:46:52 -0800
 
 libcassvalue (1.0.1.0~xenial) xenial; urgency=high
 
@@ -15,3 +20,4 @@ libcassvalue (1.0.0.0~xenial) xenial; urgency=high
   * SNAP-258: moved value parsing to its own library.
 
  -- R. Douglas Barbieri <doug@dooglio.net>  Thu, 22 Dec 2016 16:49:11 -0700
+

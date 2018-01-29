@@ -1,6 +1,6 @@
 #
 # Text:
-#      CMakeLists.txt
+#      src/CMakeLists.txt
 #
 # Description:
 #      Defines the source files.
@@ -9,7 +9,7 @@
 #      See the CMake documentation.
 #
 # License:
-#      Copyright (c) 2011-2017 Made to Order Software Corp.
+#      Copyright (c) 2011-2018  Made to Order Software Corp.  All Rights Reserved
 #
 #      http://snapwebsites.org/
 #      contact@m2osw.com
@@ -37,9 +37,9 @@
 project( cassvalue )
 
 configure_file(
-		cassvalue/version.h.in
-		${PROJECT_BINARY_DIR}/cassvalue/version.h
-		)
+    cassvalue/version.h.in
+    ${PROJECT_BINARY_DIR}/cassvalue/version.h
+)
 
 set( HEADER_FILES
     cassvalue/encoder.h
@@ -51,6 +51,7 @@ add_library(${PROJECT_NAME} SHARED
     ${HEADER_FILES}
     cassvalue/version.h.in
     value.cpp
+    version.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
