@@ -7,7 +7,7 @@ libcassvalue (1.0.2.0~xenial) xenial; urgency=high
   * Fixed the namespace of the version.h.in file.
   * Removed the `LIB` part in the version as defined in the CMakeList.txt.
 
- -- Alexis Wilke <build@m2osw.com>  Sun, 28 Jan 2018 23:46:52 -0800
+ -- Alexis Wilke <alexis@m2osw.com>  Sun, 28 Jan 2018 23:46:52 -0800
 
 libcassvalue (1.0.1.0~xenial) xenial; urgency=high
 
