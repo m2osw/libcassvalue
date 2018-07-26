@@ -877,7 +877,7 @@ public:
     }
 
 private:
-    QByteArray      f_array;
+    QByteArray      f_array = QByteArray();
 };
 
 
@@ -977,7 +977,7 @@ public:
     }
 
 private:
-    QByteArray      f_array;
+    QByteArray      f_array = QByteArray();
     mutable int     f_index = 0;
 };
 

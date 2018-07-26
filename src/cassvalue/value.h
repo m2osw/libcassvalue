@@ -188,7 +188,7 @@ private:
     // row->cell() instead of row->cell()->value())
     template<class T> Value& operator = (std::shared_ptr<T>);
 
-    QByteArray                  f_value;
+    QByteArray                  f_value = QByteArray();
 };
 
 
