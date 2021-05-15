@@ -1,3 +1,9 @@
+libcassvalue (1.0.4.2~xenial) xenial; urgency=high
+
+  * Bump version to get a recompile on launchpad.
+
+ -- Alexis Wilke <alexis@m2osw.com>  Sat, 15 May 2021 09:14:34 -0700
+
 libcassvalue (1.0.4.1~xenial) xenial; urgency=high
 
   * Bump version to get a recompile on launchpad.
