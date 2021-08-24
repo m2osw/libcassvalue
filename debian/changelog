@@ -1,3 +1,9 @@
+libcassvalue (1.0.4.4~bionic) bionic; urgency=high
+
+  * Bumped build version to rebuild on Launchpad.
+
+ -- Alexis Wilke <alexis@m2osw.com>  Tue, 24 Aug 2021 16:18:19 -0700
+
 libcassvalue (1.0.4.3~bionic) bionic; urgency=high
 
   * Bumped build version to rebuild on Launchpad.
